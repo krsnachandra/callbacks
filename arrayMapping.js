@@ -3,8 +3,8 @@ var input = [
   { x: 12, y: 5 },
   { x: 8, y: 15 }
 ];
-var result = input.map(function pythagorean(item, i) {
-  var z = Math.sqrt(Math.pow((input[i].x), 2) + Math.pow((input[i].y), 2));
+var result = input.map(function pythagorean(item) {
+  var z = Math.sqrt(Math.pow(item.x, 2) + Math.pow(item.y, 2));
   return z;
 });
 
